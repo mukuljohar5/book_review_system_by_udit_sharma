@@ -1,0 +1,12 @@
+<%= simple_form_for @book  do |f| %>
+    <%= f.select  :category_id, options_for_select(@categories), :prompt => "Select ad category" %>
+    <%= f.input :title, lable: "Book Title" %>
+    <%= f.input :description%>
+    <%= f.input :author %>
+    <%= f.file_field :avatar%>
+    <%= f.button :submit, :class => 'btn-custom2' %>
+
+   
+<% end %>
+
+
